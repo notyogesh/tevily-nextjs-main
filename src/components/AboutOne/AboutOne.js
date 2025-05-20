@@ -68,7 +68,7 @@ const AboutOne = () => {
                   </li>
                 ))}
               </ul>
-              <a href="#" className="about-one__btn thm-btn">
+              <a href="/contact" className="about-one__btn thm-btn">
                 Book with us now
               </a>
             </div>

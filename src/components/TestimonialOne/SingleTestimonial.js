@@ -12,12 +12,12 @@ const SingleTestimonial = ({ testimonial }) => {
   return (
     <div>
       <div style={{ userSelect: "none" }} className="testimonial-one__single">
-        <div className="testimonial-one__img">
+        {/* <div className="testimonial-one__img">
           <Image
             src={require(`@/images/testimonial/${image}`).default.src}
             alt=""
           />
-        </div>
+        </div> */}
         <div className="testimonail-one__content">
           <div className="testimonial-one__top-revivew-box">
             {Array.from(Array(review)).map((_, i) => (

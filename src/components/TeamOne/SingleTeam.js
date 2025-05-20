@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Image } from "react-bootstrap";
 
 const SingleTeam = ({ team = {} }) => {
-  const { image, name, title, socials } = team;
+  const { image, name, title } = team;
 
   return (
     <Col xl={3} lg={6} md={6} className="animated fadeInLeft">
@@ -13,13 +13,13 @@ const SingleTeam = ({ team = {} }) => {
         <div className="team-one__content">
           <h4 className="team-one__name">{name}</h4>
           <p className="team-one__title">{title}</p>
-          <div className="team-one__social">
+          {/* <div className="team-one__social">
             {socials.map(({ id, href, icon }) => (
               <a href={href} key={id}>
                 <i className={icon}></i>
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </Col>

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import React, { Fragment, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import JarallaxImage from "../Jarallax/JarallaxImage";
-import VideoModal from "../VideoModal/VideoModal";
+// import VideoModal from "../VideoModal/VideoModal";
 
 const Jarallax = dynamic(() => import("@/components/Jarallax/Jarallax"), {
   ssr: false,
@@ -30,10 +30,10 @@ const VideoOne = () => {
                     onClick={() => setOpen(true)}
                     className="video-popup"
                   >
-                    <div className="video-one__video-icon">
+                    {/* <div className="video-one__video-icon">
                       <span className="icon-play-button"></span>
                       <i className="ripple"></i>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <p className="video-one__tagline">{tagline}</p>
@@ -66,7 +66,7 @@ const VideoOne = () => {
           </Row>
         </Container>
       </section>
-      <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} />
+      {/* <VideoModal isOpen={isOpen} setOpen={setOpen} id={videoId} /> */}
     </>
   );
 };

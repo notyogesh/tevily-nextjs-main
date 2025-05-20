@@ -1,28 +1,29 @@
-import bg from "@/images/backgrounds/why-choose-left-bg.jpg";
+import bg from "../../public/why-choose-left-bg.jpg";
 import bg2 from "@/images/shapes/why-choose-right-map.png";
 
 const whyChoose = {
   bg,
   bg2,
   toggleText: " Trips \n & tours",
-  title: "Why Choose Tevily",
+  title: "Why Choose Make Your Vacations",
   tagline: "Our benefit lists",
-  description:
-    "There are many variations of passages of Lorem Ipsum is simply free text available in the market for you, but the majority have suffered alteration in some form.",
+  description: " We offer trusted travel services backed by industry expertise and customer-first values, ensuring every journey is smooth, safe, and unforgettable.",
+
+  
   lists: [
     {
       id: 1,
       icon: "icon-travel",
       title: "Professional and Certified",
       description:
-        "Lorem ipsum is simply free text dolor sit but the majority have suffered amet, consectetur notted.",
+      "Our team is composed of certified travel experts with years of experience, ensuring a safe and well-planned journey.",
     },
     {
       id: 2,
       icon: "icon-travel-map",
       title: "Get Instant Tour Bookings",
       description:
-        "Lorem ipsum is simply free text dolor sit but the majority have suffered amet, consectetur notted.",
+      "Book your dream tour in just a few clicks with instant confirmation — no delays, no hassle.",
     },
   ],
 };

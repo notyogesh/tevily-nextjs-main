@@ -1,13 +1,13 @@
-import image from "@/images/resources/about-page-img.jpg";
+import image from "../../public/about-page-img.jpg";
 
 const aboutPage = {
   image,
   tagline: "Learn about us",
-  title: "Dare to Explore with Tevily Agency",
+  title: "Dare to Explore with Make Your Vacations ",
   text1: "A Simply Perfect Place to Get Lost",
   text2:
-    "We are trusted by our clients and have a reputation for the best services in the field. Lorem ipsum is simply free text dolor sit amett consectetur adipiscing elit. It is a long established fact that a reader will be distracted by the readable content of a page.",
-  progress: [
+ "We are trusted by our clients and known for delivering outstanding service. With a proven track record in the travel industry, we ensure every journey is memorable, safe, and tailored to your needs."
+  ,progress: [
     {
       id: 1,
       title: "Best Services",

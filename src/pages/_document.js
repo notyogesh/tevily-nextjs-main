@@ -27,23 +27,23 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="apple-touch-icon.png"
+            href="favicon.ico"
           />
           <link
             rel="icon"
-            type="image/png"
+            type="image/ico"
             sizes="32x32"
-            href="favicon-32x32.png"
+            href="favicon.ico"
           />
           <link
             rel="icon"
-            type="image/png"
+            type="image/ico"
             sizes="16x16"
-            href="favicon-16x16.png"
+            href="favicon.ico"
           />
           <link rel="icon" href="favicon.ico" />
           <link rel="manifest" href="manifest.json" />
-          <meta name="description" content="Tevily NEXT JS Template For Tour" />
+<meta name="description" content="Make Your Vacation is your trusted tour arranging partner, offering personalized travel packages, guided tours, and unforgettable holiday experiences across top destinations. Let us plan your perfect getaway!"/>
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

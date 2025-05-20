@@ -75,17 +75,22 @@ const Header = ({ pageTitle }) => {
           <Container className="clearfix">
             <div className="main-menu-wrapper-inner clearfix">
               <div className="main-menu-wrapper__left clearfix">
-                <div className="main-menu-wrapper__logo">
+                <div className="main-menu-wrapper__logo d-flex flex-row align-items-center">
                   <Link href="/">
                     <a>
                       <Image
                         src={pageTitle === "Home Two" ? logo2.src : logo.src}
                         alt=""
+                        width={80}
                       />
+                      
                     </a>
-                  </Link>
+                    
+                  </Link> 
+                   <h1 className="me-3  mb-0 h4">Make your vacations</h1>
+
                 </div>
-                <div className="main-menu-wrapper__main-menu">
+                <div className="main-menu-wrapper__main-menu mt-3">
                   <span
                     onClick={() => toggleMenu()}
                     className="mobile-nav__toggler"
@@ -99,14 +104,14 @@ const Header = ({ pageTitle }) => {
                   </ul>
                 </div>
               </div>
-              <div className="main-menu-wrapper__right">
+              {/* <div className="main-menu-wrapper__right">
                 <span
                   onClick={toggleSearch}
                   style={{ cursor: "pointer" }}
                   className="main-menu__search search-toggler icon-magnifying-glass"
                 ></span>
                 <a href="#" className="main-menu__user icon-avatar"></a>
-              </div>
+              </div> */}
             </div>
           </Container>
         </div>

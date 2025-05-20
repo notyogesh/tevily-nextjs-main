@@ -1,4 +1,4 @@
-import logo from "@/images/resources/footer-logo.png";
+import logo from "../../public/logoCropped.png";
 
 const social = [
   { icon: "fa-facebook-square", link: "https://www.instagram.com/make_your_vacations?igsh=MWVsc3U0dG51bW1oeQ%3D%3D&utm_source=qr" },

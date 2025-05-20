@@ -1,36 +1,36 @@
-import logo from "@/images/resources/logo-1.png";
-import logo2 from "@/images/resources/logo-2.png";
+import logo from "../../public/logoCropped.png";
+import logo2 from "../../public/logoCropped.png";
 
 const navItems = [
   {
     id: 1,
     name: "Home",
     href: "/",
-    subNavItems: [
-      {
-        id: 1,
-        name: "Home One",
-        href: "/",
-      },
-      {
-        id: 2,
-        name: "Home Two",
-        href: "/home2",
-      },
-      {
-        id: 3,
-        name: "Header Styles",
-        href: "/",
-        subItems: [
-          {
-            id: 1,
-            name: "Header One",
-            href: "",
-          },
-          { id: 2, name: "Header Two", href: "" },
-        ],
-      },
-    ],
+    // subNavItems: [
+    //   {
+    //     id: 1,
+    //     name: "Home One",
+    //     href: "/",
+    //   },
+    //   {
+    //     id: 2,
+    //     name: "Home Two",
+    //     href: "/home2",
+    //   },
+    //   {
+    //     id: 3,
+    //     name: "Header Styles",
+    //     href: "/",
+    //     subItems: [
+    //       {
+    //         id: 1,
+    //         name: "Header One",
+    //         href: "",
+    //       },
+    //       { id: 2, name: "Header Two", href: "" },
+    //     ],
+    //   },
+    // ],
   },
   {
     id: 2,
@@ -45,27 +45,27 @@ const navItems = [
     id: 3,
     name: "Tours",
     href: "/tours",
-    subNavItems: [
-      { id: 1, name: "Tours", href: "/tours" },
-      { id: 2, name: "Tours List", href: "/tours-list" },
-      { id: 3, name: "Tours Details", href: "/tour-details" },
-    ],
+    // subNavItems: [
+    //   { id: 1, name: "Tours", href: "/tours" },
+    //   { id: 2, name: "Tours List", href: "/tours-list" },
+    //   { id: 3, name: "Tours Details", href: "/tour-details" },
+    // ],
   },
   {
     id: 4,
-    name: "Pages",
-    href: "",
-    subNavItems: [{ id: 1, name: "About", href: "/about" }],
+    name: "About",
+    href: "/about",
+    // subNavItems: [{ id: 1, name: "About", href: "/about" }],
   },
-  {
-    id: 5,
-    name: "News",
-    href: "/news",
-    subNavItems: [
-      { id: 1, name: "News", href: "/news" },
-      { id: 2, name: "News Details", href: "/news-details" },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   name: "News",
+  //   href: "/news",
+  //   subNavItems: [
+  //     { id: 1, name: "News", href: "/news" },
+  //     { id: 2, name: "News Details", href: "/news-details" },
+  //   ],
+  // },
   {
     id: 6,
     name: "Contact",

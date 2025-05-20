@@ -1,7 +1,7 @@
 import whyChoose from "@/data/whyChoose";
 import React, { Fragment } from "react";
 
-const { bg, bg2, toggleText, tagline, title, description, lists } = whyChoose;
+const { bg, bg2, toggleText, tagline, title, lists } = whyChoose;
 
 const WhyChoose = () => {
   return (
@@ -33,7 +33,7 @@ const WhyChoose = () => {
               <span className="section-title__tagline">{tagline}</span>
               <h2 className="section-title__title">{title}</h2>
             </div>
-            <p className="why-choose__right-text">{description}</p>
+            {/* <p className="why-choose__right-text">{description}</p> */}
             <ul className="list-unstyled why-choose__list">
               {lists.map((list) => (
                 <li key={list.id}>
