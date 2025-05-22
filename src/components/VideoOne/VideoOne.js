@@ -9,7 +9,7 @@ const Jarallax = dynamic(() => import("@/components/Jarallax/Jarallax"), {
   ssr: false,
 });
 
-const { bg, videoId, tagline, title, iconBoxes } = videoOne;
+const { bg, tagline, title, iconBoxes } = videoOne;
 
 const VideoOne = () => {
   const [isOpen, setOpen] = useState(false);
@@ -18,7 +18,7 @@ const VideoOne = () => {
     <>
       <section className="video-one">
         <Jarallax className="video-one-bg" speed={0.2} imgPosition="50% 0%">
-          <JarallaxImage src={bg.src} />
+          <JarallaxImage src={bg} />
         </Jarallax>
         <Container>
           <Row>

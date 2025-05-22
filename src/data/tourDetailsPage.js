@@ -1,6 +1,6 @@
 export const tourDetailsOne = {
   title: "National Park 2 Days Tour",
-  rate: 870,
+  rate: 30000,
   duration: "3 Days",
   minAge: "12 +",
   tourType: "Adventure, Fun",

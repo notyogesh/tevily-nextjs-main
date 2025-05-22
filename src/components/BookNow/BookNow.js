@@ -1,4 +1,5 @@
 import bookNow from "@/data/bookNow";
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -20,9 +21,10 @@ const BookNow = () => {
                 <h2>{title}</h2>
               </div>
               <div className="book-now__right">
-                <a href="#" className="thm-btn book-now__btn">
+                <Link href="/contact" >
+                <a className="thm-btn book-now__btn">
                   Book tour now
-                </a>
+                </a></Link>
               </div>
             </div>
           </Col>

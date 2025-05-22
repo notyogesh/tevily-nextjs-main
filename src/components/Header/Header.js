@@ -5,12 +5,11 @@ import Link from "next/link";
 import React from "react";
 import { Container, Image } from "react-bootstrap";
 import NavItem from "./NavItem";
-
 const { icons, navItems, social, logo, logo2 } = headerData;
 
 const Header = ({ pageTitle }) => {
   const scrollTop = useScroll(130);
-  const { toggleMenu, toggleSearch } = useRootContext();
+  const { toggleMenu } = useRootContext();
 
   return (
     <header
@@ -45,9 +44,10 @@ const Header = ({ pageTitle }) => {
                   ))}
                 </div>
                 <div className="main-header__top-right-btn-box">
-                  <a href="/contact" className="thm-btn main-header__top-right-btn">
+                  <Link href="/contact">
+                  <a className="thm-btn main-header__top-right-btn">
                     Become a local guide
-                  </a>
+                  </a></Link>
                 </div>
               </div>
             </div>

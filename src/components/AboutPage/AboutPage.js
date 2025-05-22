@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import VisibilitySensor from "react-visibility-sensor";
 
-const { image, tagline, title, text1, text2, progress } = aboutPage;
+const { tagline, title, text1, text2, progress } = aboutPage;
 
 const AboutPage = () => {
   const [countStart, setCountStart] = useState(false);
@@ -21,7 +21,7 @@ const AboutPage = () => {
           <Col xl={6}>
             <div className="about-page__left">
               <div className="about-page__img">
-                <Image src={image.src} alt="" />
+                <Image src="/about-page-img.jpg" alt="About" fluid />
               </div>
             </div>
           </Col>

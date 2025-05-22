@@ -1,7 +1,5 @@
-import bg from "../../public/video-one-bg.jpg";
-
 const videoOne = {
-  bg,
+  bg: "/video-one-bg.jpg",
   videoId: "Get7rqXYrbQ",
   tagline: "Are you ready to travel?",
   title: "Tevily is a World Leading Online Tour Booking Platform",

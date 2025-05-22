@@ -1,6 +1,7 @@
 import aboutOne from "@/data/aboutOne";
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import Link from "next/link";
 
 const {
   about,
@@ -29,7 +30,7 @@ const AboutOne = () => {
             <div className="about-one__left">
               <div className="about-one__img-box">
                 <div className="about-one__img">
-                  <Image src={about.src} alt="" />
+                  <Image src={about} alt="" />
                 </div>
                 <div className="about-one__call">
                   <div className="about-one__call-icon">
@@ -68,9 +69,9 @@ const AboutOne = () => {
                   </li>
                 ))}
               </ul>
-              <a href="/contact" className="about-one__btn thm-btn">
-                Book with us now
-              </a>
+              <Link href="/contact">
+                <a className="about-one__btn thm-btn">Book with us now</a>
+              </Link>
             </div>
           </Col>
         </Row>

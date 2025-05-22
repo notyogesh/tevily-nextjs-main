@@ -1,4 +1,4 @@
-import bg from "../../../public/page-header-bg.jpg";
+// import bg from "./page-header-bg.jpg";
 import Link from "next/link";
 import React from "react";
 import { Container } from "react-bootstrap";
@@ -9,7 +9,7 @@ const PageHeader = ({ title = "", page = "", outerPage = "" }) => {
       <div className="page-header__top">
         <div
           className="page-header-bg"
-          style={{ backgroundImage: ` url(${bg.src})` }}
+          style={{ backgroundImage: `url("/page-header-bg.jpg")` }}
         ></div>
         <div className="page-header-bg-overly"></div>
         <Container>

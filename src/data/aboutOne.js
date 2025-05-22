@@ -1,9 +1,9 @@
-import about from "../../public/about-one-img-1.png";
+// import about from "../../public/about-one-img-1.png";
 import shape1 from "@/images/shapes/about-one-shape-1.png";
 import shape2 from "@/images/shapes/about-one-shape-2.png";
 
 const aboutOne = {
-  about,
+  about: "/about-one-img-1.png",
   shape1,
   shape2,
   phone: "+91 9003564101",

@@ -3,16 +3,13 @@ import React from "react";
 import { Col, Image } from "react-bootstrap";
 
 const SingleDestination = ({ destination = {} }) => {
-  const { image, title,  subTitle, col } = destination;
+  const { image, title, subTitle, col } = destination;
 
   return (
     <Col xl={col} lg={col}>
       <div className="destinations-one__single">
         <div className="destinations-one__img">
-          <Image
-            src={image.src}
-            alt=""
-          />
+          <Image src={image} alt="" />
           <div className="destinations-one__content">
             {subTitle && (
               <p className="destinations-one__sub-title">{subTitle}</p>

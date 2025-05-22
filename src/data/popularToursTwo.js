@@ -7,7 +7,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-1.jpg",
       title: "National Park 2 Days Tour",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
     {
@@ -15,7 +15,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-2.jpg",
       title: "Magic of Italy Tours",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
     {
@@ -23,7 +23,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-3.jpg",
       title: "Discover Depth of Beach",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
     {
@@ -31,7 +31,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-4.jpg",
       title: "Moscow Red City Land",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
     {
@@ -39,7 +39,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-5.jpg",
       title: "Dark Forest Adventure",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
     {
@@ -47,7 +47,7 @@ const popularToursTwo = {
       image: "popular-tours-two__img-6.jpg",
       title: "Discover Depth of Beach",
       superb: "8.0",
-      rate: "1870",
+      rate: "30000",
       meta: ["3 Days", "12+", "Los Angeles"],
     },
   ],

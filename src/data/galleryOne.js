@@ -1,15 +1,13 @@
-import bg from "@/images/shapes/gallery-map.png";
-import gallery1 from "../../public/gallery-one-img-1.jpg"
-import gallery2 from "../../public/gallery-one-img-2.jpg"
-import gallery3 from "../../public/gallery-one-img-3.jpg"
-import gallery4 from "../../public/gallery-one-img-4.jpg"
-import gallery5 from "../../public/gallery-one-img-5.jpg"
+import bg from "@/images/shapes/gallery-map.png"; // This one is fine because it's from src
 
 const galleryOne = {
   bg,
   galleryData: [
-    gallery1,gallery2,gallery3,gallery4,gallery5
-    
+    "/gallery-one-img-1.jpg",
+    "/gallery-one-img-2.jpg",
+    "/gallery-one-img-3.jpg",
+    "/gallery-one-img-4.jpg",
+    "/gallery-one-img-5.jpg",
   ],
 };
 

@@ -1,6 +1,6 @@
 import AboutPage from "@/components/AboutPage/AboutPage";
 import BookNow from "@/components/BookNow/BookNow";
-import BrandTwo from "@/components/BrandTwo/BrandTwo";
+// import BrandTwo from "@/components/BrandTwo/BrandTwo";
 import CounterOne from "@/components/CounterOne/CounterOne";
 import Layout from "@/components/Layout/Layout";
 import PageHeader from "@/components/PageHeader/PageHeader";
