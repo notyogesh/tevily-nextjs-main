@@ -126,6 +126,7 @@ ul {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  appearance: none;
   -webkit-appearance: none;
   border: none;
   outline: none !important;

@@ -1,7 +1,7 @@
 const popularTours = [
   {
     id: 1,
-    image: "popular-tours__img-1.jpg",
+    image: "/popular-tours__img-1.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -9,7 +9,7 @@ const popularTours = [
   },
   {
     id: 2,
-    image: "popular-tours__img-2.jpg",
+    image: "/popular-tours__img-2.jpg",
     title: "Dark Forest Adventure",
     superb: "8.0",
     rate: "1870",
@@ -25,7 +25,7 @@ const popularTours = [
   },
   {
     id: 4,
-    image: "popular-tours__img-4.jpg",
+    image: "/popular-tours__img-4.jpg",
     title: "Moscow Red City Land",
     superb: "8.0",
     rate: "1870",
@@ -33,7 +33,7 @@ const popularTours = [
   },
   {
     id: 5,
-    image: "popular-tours__img-1.jpg",
+    image: "/popular-tours__img-1.jpg",
     title: "Magic of Italy Tours",
     superb: "8.0",
     rate: "1870",
@@ -41,7 +41,7 @@ const popularTours = [
   },
   {
     id: 6,
-    image: "popular-tours__img-2.jpg",
+    image: "/popular-tours__img-2.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -49,7 +49,7 @@ const popularTours = [
   },
   {
     id: 7,
-    image: "popular-tours__img-3.jpg",
+    image: "/popular-tours__img-3.jpg",
     title: "Discover Depth of Beach",
     superb: "8.0",
     rate: "1870",
@@ -57,7 +57,7 @@ const popularTours = [
   },
   {
     id: 8,
-    image: "popular-tours__img-4.jpg",
+    image: "/popular-tours__img-4.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -65,7 +65,7 @@ const popularTours = [
   },
   {
     id: 9,
-    image: "popular-tours__img-1.jpg",
+    image: "/popular-tours__img-1.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -73,7 +73,7 @@ const popularTours = [
   },
   {
     id: 10,
-    image: "popular-tours__img-2.jpg",
+    image: "/popular-tours__img-2.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -81,7 +81,7 @@ const popularTours = [
   },
   {
     id: 11,
-    image: "popular-tours__img-3.jpg",
+    image: "/popular-tours__img-3.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
@@ -89,7 +89,7 @@ const popularTours = [
   },
   {
     id: 12,
-    image: "popular-tours__img-4.jpg",
+    image: "/popular-tours__img-4.jpg",
     title: "National Park 2 Days Tour",
     superb: "8.0",
     rate: "1870",
