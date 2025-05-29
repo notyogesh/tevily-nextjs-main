@@ -1,9 +1,15 @@
 import logo from "../../public/logoCropped.png";
 
 const social = [
-  { icon: "fa-facebook-square", link: "https://www.instagram.com/make_your_vacations?igsh=MWVsc3U0dG51bW1oeQ%3D%3D&utm_source=qr" },
+  {
+    icon: "fa-facebook-square",
+    link: "https://www.instagram.com/make_your_vacations?igsh=MWVsc3U0dG51bW1oeQ%3D%3D&utm_source=qr",
+  },
   // { icon: "fa-twitter", link: "" },
-  { icon: "fa-instagram", link: "https://www.facebook.com/share/15PLysgqhM/?mibextid=wwXIfr" },
+  {
+    icon: "fa-instagram",
+    link: "https://www.facebook.com/share/15PLysgqhM/?mibextid=wwXIfr",
+  },
   // { icon: "fa-pinterest-p", link: "" },
 ];
 
@@ -12,8 +18,7 @@ const footerData = {
   social,
   year: new Date().getFullYear(),
   author: "Make Your Vacations",
-  about:
-    "We Plan, You Relax.",
+  about: "We Plan, You Relax.",
   icons: [
     {
       id: 1,
@@ -35,17 +40,17 @@ const footerData = {
   ],
   companies: [
     { id: 1, link: "/about", title: "About Us" },
-    { id: 2, link: "#", title: "Community Blog" },
-    { id: 3, link: "#", title: "Rewards" },
-    { id: 4, link: "#", title: "Work with Us" },
-    { id: 5, link: "#", title: "Meet the Team" },
+    // { id: 2, link: "#", title: "Community Blog" },
+    { id: 3, link: "/contact", title: "Rewards" },
+    // { id: 4, link: "#", title: "Work with Us" },
+    { id: 5, link: "/about", title: "Meet the Team" },
   ],
   explore: [
-    { id: 1, link: "#", title: "Account" },
-    { id: 2, link: "#", title: "Legal" },
-    { id: 3, link: "#", title: "Contact" },
-    { id: 4, link: "#", title: "Affilitate Program" },
-    { id: 5, link: "#", title: "Privacy Policy" },
+    // { id: 1, link: "#", title: "Account" },
+    // { id: 2, link: "#", title: "Legal" },
+    { id: 3, link: "/contact", title: "Contact" },
+    { id: 4, link: "/contact", title: "Affilitate Program" },
+    { id: 5, link: "/privacy-policy", title: "Privacy Policy" },
   ],
 };
 
