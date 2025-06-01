@@ -12,7 +12,14 @@ const SingleTour = ({ tour = {}, userSelect = false }) => {
         className="popular-tours__single"
       >
         <div className="popular-tours__img">
-          <Image src={image} alt="" />
+          <Image
+            className="img-fluid"
+            alt={title}
+            width={370}
+            height={250}
+            loading="lazy"
+            src={require(`@/images/resources/${image}`).default.src}
+          />
           <div className="popular-tours__icon">
             <Link href="#">
               <a>

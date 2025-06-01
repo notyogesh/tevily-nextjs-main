@@ -7,7 +7,7 @@ const NavItem = ({ navItem = {} }) => {
 
   const { name, href } = navItem;
   // const subHref = subNavItems.map((item) => item.href);
-  const current = pathname === href ;
+  const current = pathname === href;
 
   return (
     <li className={`dropdown${current ? " current" : ""}`}>

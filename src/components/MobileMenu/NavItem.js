@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import SubNavItem from "./SubNavItem";
+// import SubNavItem from "./SubNavItem";
 
 const NavItem = ({ item = {} }) => {
   const { pathname } = useRouter();
@@ -14,23 +14,23 @@ const NavItem = ({ item = {} }) => {
     setExpand((preExpand) => !preExpand);
   };
 
-  const { name, href, subNavItems } = item;
+  const { name, href } = item;
 
   return (
     <li className={`dropdown${pathname === href ? " current" : ""}`}>
       <Link href={href}>
         <a className={expand ? " expanded" : ""}>
           {name}
-          <button
+          {/* <button
             onClick={handleExpand}
             aria-label="dropdown toggler"
             className={expand ? "expanded" : ""}
           >
             <i className="fa fa-angle-down"></i>
-          </button>
+          </button> */}
         </a>
       </Link>
-      <ul
+      {/* <ul
         style={{
           display: expand ? "block" : "none",
         }}
@@ -38,7 +38,7 @@ const NavItem = ({ item = {} }) => {
         {subNavItems.map((subItem) => (
           <SubNavItem subItem={subItem} key={subItem.id} />
         ))}
-      </ul>
+      </ul> */}
     </li>
   );
 };
