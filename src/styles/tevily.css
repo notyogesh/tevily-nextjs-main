@@ -1721,7 +1721,9 @@ ul {
 }
 
 .tour-search-one__input-box
-  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="reset"]),
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(
+    [type="reset"]
+  ),
 .tour-search-one__input-box textarea {
   border: none;
   outline: none;
@@ -1765,7 +1767,9 @@ ul {
 }
 
 .tour-search-one__input-box
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
   width: 100%;
 }
 
@@ -4937,6 +4941,7 @@ ul {
 }
 
 .comment-form__input-box input[type="text"],
+.comment-form__input-box input[type="tel"],
 .comment-form__input-box input[type="email"] {
   height: 67px;
   width: 100%;
@@ -5443,7 +5448,9 @@ ul {
 }
 
 .tours-list__sidebar-input
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
   width: 100%;
 }
 
@@ -6738,7 +6745,9 @@ ul {
 }
 
 .tour-details-two__sidebar-form-input
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
   width: 100%;
 }
 

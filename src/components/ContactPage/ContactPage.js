@@ -1,22 +1,69 @@
 import contactPage from "@/data/contactPage";
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 const { tagline, title, socials } = contactPage;
 
-const inputs = ["name", "email", "message"];
+const inputs = ["name", "email", "Phone", "message"];
 
 const ContactPage = () => {
-  const handleSubmit = (e) => {
+  const [snackbar, setSnackbar] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const fromData = new FormData(e.target);
+    const formUrl =
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEgpHgNqVscJ2JjjuBS2qDGZDiHeTda2PYxl9ThPAP59RCmA/formResponse";
+
+    const formData = new FormData(e.target);
     const data = {};
-    inputs.forEach((input) => (data[input] = fromData.get(input)));
-    console.log(data);
+    inputs.forEach((input) => (data[input] = formData.get(input)));
+
+    // Map your form fields to Google Form entry IDs
+    const formDataEncoded = new URLSearchParams();
+    formDataEncoded.append("entry.739053371", data.name); // Name
+    formDataEncoded.append("entry.1403158423", data.email); // Email
+    formDataEncoded.append("entry.1052380778", data.phone); // Phone
+
+    formDataEncoded.append("entry.53985524", data.message); // Message
+
+    try {
+      await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formDataEncoded.toString(),
+      });
+      setSnackbar(true);
+      e.target.reset();
+      setTimeout(() => setSnackbar(false), 3000); // Hide after 3s
+    } catch (error) {
+      console.error("Submission error:", error);
+    }
   };
 
   return (
     <section className="contact-page">
+      {" "}
+      {snackbar && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 30,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#4caf50",
+            color: "#fff",
+            padding: "16px 32px",
+            borderRadius: 8,
+            zIndex: 9999,
+            boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
+          }}
+        >
+          Form submitted successfully! We will contact you soon.
+        </div>
+      )}
       <Container>
         <Row>
           <Col xl={4} lg={5}>
@@ -51,8 +98,18 @@ const ContactPage = () => {
                           required
                         />
                       </div>
-                    </Col>
+                    </Col>{" "}
                     <Col xl={6}>
+                      <div className="comment-form__input-box">
+                        <input
+                          type="tel"
+                          placeholder="Phone number"
+                          name="phone"
+                          required
+                        />
+                      </div>
+                    </Col>
+                    <Col xl={12}>
                       <div className="comment-form__input-box">
                         <input
                           type="email"
