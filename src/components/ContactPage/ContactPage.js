@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const { tagline, title, socials } = contactPage;
 
-const inputs = ["name", "email", "Phone", "message"];
+const inputs = ["name", "email", "phone", "message"];
 
 const ContactPage = () => {
   const [snackbar, setSnackbar] = useState(false);
@@ -17,6 +17,7 @@ const ContactPage = () => {
     const formData = new FormData(e.target);
     const data = {};
     inputs.forEach((input) => (data[input] = formData.get(input)));
+    console.log("Collected form data:", data);
 
     // Map your form fields to Google Form entry IDs
     const formDataEncoded = new URLSearchParams();
@@ -36,6 +37,7 @@ const ContactPage = () => {
         body: formDataEncoded.toString(),
       });
       setSnackbar(true);
+
       e.target.reset();
       setTimeout(() => setSnackbar(false), 3000); // Hide after 3s
     } catch (error) {
